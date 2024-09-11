@@ -12,3 +12,9 @@ akkor az aranynak hamisnak kell lennie, tehát a bronzban lehetne, de az igaz mi
 mert ha az igaz akkor az ezüst felirata is automatikusan igaz lenne. 
 ## Gui kép:
 ![gui](https://github.com/user-attachments/assets/758b34db-eb17-4e6d-9277-b808ac03fedd)
+
+## Ha én folytatnám a feladata leprogramozását: 
+Amikor a felhasználó választ egy ládát a gombok automatikusan nem kattinthatóak többet.
+A választott gomb szövege ekkor megváltozna: 
+Ha a felhasználó a helyes "ládát" választja a szöveg legyen a következő: "Sikeresen eltaláltad!"
+Ha a felhasználó a rossz "ládák" egyikét választotta akkor a szöveg legyen a következő: "Sajnos nem ebben a ládában volt."
