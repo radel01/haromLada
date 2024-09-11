@@ -11,4 +11,4 @@ akkor az aranynak hamisnak kell lennie, tehát a bronzban lehetne, de az igaz mi
 # Az arany nem lehet igaz:
 mert ha az igaz akkor az ezüst felirata is automatikusan igaz lenne. 
 ## Gui kép:
-![gui](https://github.com/user-attachments/assets/1590b8b3-4ac8-44fc-a994-a2ddab16df0d)
+![gui](https://github.com/user-attachments/assets/758b34db-eb17-4e6d-9277-b808ac03fedd)
