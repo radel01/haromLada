@@ -26,21 +26,78 @@ public class HaromLada extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        konténer = new javax.swing.JPanel();
+        foCim = new javax.swing.JLabel();
+        ezustLada = new javax.swing.JButton();
+        bronzLada = new javax.swing.JButton();
+        aranyLada = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        foCim.setText("Három Láda Logikai játék");
+
+        ezustLada.setBackground(new java.awt.Color(204, 204, 204));
+        ezustLada.setText("Nem én rejtem a kincset");
+        ezustLada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ezustLadaActionPerformed(evt);
+            }
+        });
+
+        bronzLada.setBackground(new java.awt.Color(195, 125, 125));
+        bronzLada.setText("Az arany hazudik");
+
+        aranyLada.setBackground(new java.awt.Color(255, 204, 102));
+        aranyLada.setText("Én rejtem a kincset");
+
+        javax.swing.GroupLayout konténerLayout = new javax.swing.GroupLayout(konténer);
+        konténer.setLayout(konténerLayout);
+        konténerLayout.setHorizontalGroup(
+            konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(konténerLayout.createSequentialGroup()
+                .addGroup(konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(konténerLayout.createSequentialGroup()
+                        .addGap(68, 68, 68)
+                        .addGroup(konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(aranyLada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ezustLada, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                            .addComponent(bronzLada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(konténerLayout.createSequentialGroup()
+                        .addGap(127, 127, 127)
+                        .addComponent(foCim)))
+                .addContainerGap(65, Short.MAX_VALUE))
+        );
+        konténerLayout.setVerticalGroup(
+            konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, konténerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(foCim, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(aranyLada, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(ezustLada, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(bronzLada, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(konténer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(konténer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ezustLadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ezustLadaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ezustLadaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +135,10 @@ public class HaromLada extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton aranyLada;
+    private javax.swing.JButton bronzLada;
+    private javax.swing.JButton ezustLada;
+    private javax.swing.JLabel foCim;
+    private javax.swing.JPanel konténer;
     // End of variables declaration//GEN-END:variables
 }
