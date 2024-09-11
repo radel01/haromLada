@@ -31,7 +31,8 @@ public class HaromLada extends javax.swing.JFrame {
         ezustLada = new javax.swing.JButton();
         bronzLada = new javax.swing.JButton();
         aranyLada = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        leiras = new javax.swing.JLabel();
+        feladat = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -52,41 +53,45 @@ public class HaromLada extends javax.swing.JFrame {
         aranyLada.setBackground(new java.awt.Color(255, 204, 102));
         aranyLada.setText("\"Én rejtem a kincset\"");
 
-        jLabel1.setText("A három láda feliratai közül csak 1 lehet igaz, a másik kettő biztosan hamis");
+        leiras.setText("A három láda feliratai közül csak 1 lehet igaz, a másik kettő biztosan hamis");
+
+        feladat.setText("Kattints arra a ládára amiben szerinted a kincs van");
 
         javax.swing.GroupLayout konténerLayout = new javax.swing.GroupLayout(konténer);
         konténer.setLayout(konténerLayout);
         konténerLayout.setHorizontalGroup(
             konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, konténerLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(leiras, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE))
             .addGroup(konténerLayout.createSequentialGroup()
                 .addGroup(konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(konténerLayout.createSequentialGroup()
+                        .addGap(126, 126, 126)
+                        .addComponent(foCim))
                     .addGroup(konténerLayout.createSequentialGroup()
                         .addGap(75, 75, 75)
                         .addGroup(konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(aranyLada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ezustLada, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
-                            .addComponent(bronzLada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(konténerLayout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(foCim)))
-                .addContainerGap(75, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, konténerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 401, Short.MAX_VALUE))
+                            .addComponent(ezustLada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(bronzLada, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(feladat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         konténerLayout.setVerticalGroup(
             konténerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, konténerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(foCim, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(foCim, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(feladat)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(aranyLada, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(ezustLada, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(bronzLada, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1)
+                .addComponent(leiras)
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
@@ -147,8 +152,9 @@ public class HaromLada extends javax.swing.JFrame {
     private javax.swing.JButton aranyLada;
     private javax.swing.JButton bronzLada;
     private javax.swing.JButton ezustLada;
+    private javax.swing.JLabel feladat;
     private javax.swing.JLabel foCim;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel konténer;
+    private javax.swing.JLabel leiras;
     // End of variables declaration//GEN-END:variables
 }
