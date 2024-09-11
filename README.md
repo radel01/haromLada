@@ -6,7 +6,7 @@ A bronz láda felirata: "Az arany láda hazudik"
 
 # Ha a bronz igaz: 
 akkor az aranyban nincs, az ezüstben kell lennie.
-# Ha az ezüst igaz:
-akkor az aranynak hamisnak kell lennie, tehát a bronzban van.
+# Az ezüst nem lehet igaz:
+akkor az aranynak hamisnak kell lennie, tehát a bronzban lehetne, de az igaz mivel nem az aranyban van tehát az hazudik
 # Az arany nem lehet igaz:
 mert ha az igaz akkor az ezüst felirata is automatikusan igaz lenne. 
